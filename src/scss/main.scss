@@ -1,0 +1,62 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+
+@import "./blocks/*.scss";
+@import "./base/reset";
+@import "./base/vars";
+@import "./base/btns";
+
+
+@font-face {
+  font-family: 'Nimbus Sans L Bold';
+  src: url('../fonts/NimbusSanL-Bol.otf') format('opentype');
+  font-style: normal;
+}
+
+h1 {font-size: 70px; letter-spacing: -0.05em; font-family: 'Nimbus Sans L Bold';}
+h2 {font-size: 48px; letter-spacing: -0.05em; font-family: 'Nimbus Sans L Bold';}
+h3 {font-size: 30px; letter-spacing: -0.05em;}
+h4 {font-size: 24px; letter-spacing: -0.05em; font-weight: 600;}
+p {font-size: 18px;}
+
+* {
+    box-sizing: border-box;
+    color: var(--main-color);
+}
+
+body {
+    font-family: var(--font-main);
+}
+
+.container {
+    padding: 0 var(--container-padding);
+    margin-bottom: 200px;
+}
+
+h2 {
+    font-family: 'Nimbus Sans L Bold';
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 40px;
+        margin-bottom: 100px;
+    }
+    .hero-container {
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 375px) {
+        .container {
+            padding: 0 16px;
+            margin-bottom: 50px;
+        }  
+        .hero-container {
+            margin-bottom: 50px;
+        }
+    }
+
+
+

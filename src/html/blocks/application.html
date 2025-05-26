@@ -1,0 +1,98 @@
+<section class="application" id="application">
+    <div class="container">
+
+        <div class="application__body">
+            <div class="application__heading">
+                <h2>Создайте свою пластинку</h2>
+                <p>Заполните форму и с Вами свяжутся в кратчайшие сроки!</p>
+            </div>
+
+            <form action="submit">
+                <div class="contact">
+                    <div class="input-group">
+                        <label for="fullName">ФИО</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Электронная почта</label>
+                        <input type="email" name="email" id="email">  
+                    </div>
+                </div>
+                <fieldset id="size">
+                    <legend>Размер пластинки</legend>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="size" id="size-1" checked> 7``
+                        </label>
+                        <label>
+                            <input type="radio" name="size" id="size-2"> 10``
+                        </label>
+                        <label>
+                            <input type="radio" name="size" id="size-3"> 12``
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset id="color">
+                    <legend>Цвет пластинки</legend>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="color" id="color-1" checked> Классика
+                        </label>
+                        <label>
+                            <input type="radio" name="color" id="color-2"> Стекло
+                        </label>
+                        <label>
+                            <input type="radio" name="color" id="color-3"> Белизна
+                        </label>
+                        <label>
+                            <input type="radio" name="color" id="color-4"> Кристалл
+                        </label>
+                        <label>
+                            <input type="radio" name="color" id="color-5"> Свой цвет
+                        </label>
+                        </div>
+                </fieldset>
+
+                <fieldset id="tag">
+                    <legend>Дизайн этикетки <span class="mark" title="Этикетка – центральная наклейка на виниле. Можно выбрать классический шаблон или добавить свой логотип/рисунок (круглый формат, 300 DPI).">&#x1F6C8</span></legend>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="tag" id="tag-1" checked> Классический стиль
+                        </label>
+                        <label>
+                            <input type="radio" name="tag" id="tag-2"> Собственный дизайн
+                        </label>
+                        </div>
+                </fieldset>
+
+                <fieldset id="cover">
+                    <legend>Дизайн обложки <span class="mark" title="Обложка – внешнее оформление пластинки. Выберите готовый дизайн или загрузите свой вариант (JPG/PNG, 300 DPI).">&#x1F6C8</span></legend> 
+                        <div class="radio-group">
+                        <label>
+                            <input type="radio" name="cover" id="cover-1" checked> Классический стиль
+                        </label>
+                        <label>
+                            <input type="radio" name="cover" id="cover-2"> Собственный дизайн
+                        </label>
+                        </div>
+                </fieldset>
+
+                <label class="input-file">
+                    <span class="input-file-text" type="text">Загрузите аудио</span>
+                    <input type="file" name="file">        
+                    <span class="input-file-btn">&#x1F5C0;</span>
+                </label>
+                
+                
+
+                <button class="btn-application">Заказать пластинку</button>
+
+            </form>
+        </div>
+
+        <div class="application__cover">
+            <img src="./../../img/application.png" alt="Vynil Cover">
+        </div>
+    </div>
+</section>

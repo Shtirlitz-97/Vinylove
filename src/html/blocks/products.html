@@ -1,0 +1,18 @@
+<section class="products">
+    <div class="container">
+
+        <h2 class="products__title">Пластинки на любой вкус</h2>
+
+        <div class="products__cards">
+            
+            <!-- Slider main container -->
+            <div class="swiper swiper-products">
+                <div class="swiper-wrapper">
+                    @@loop('blocks/card.html', './data/products.json')
+                </div>
+            <div class="swiper-button-prev products-arrow"></div>
+            <div class="swiper-button-next products-arrow"></div>
+            
+        </div>
+    </div>
+</section>

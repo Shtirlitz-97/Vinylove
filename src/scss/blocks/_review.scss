@@ -1,0 +1,110 @@
+.review {
+    position: relative;
+
+    .review__body {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        gap: 40px;
+        padding: 30px;
+        border: 1px solid rgba(25, 26, 35, 0.2);
+        height: 400px;
+        position: relative;
+        background-color: var(--color-white-solid);
+        z-index: 2;
+        margin-top: 140px;
+        align-items: start;
+
+        .review__title {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 36px;
+        }
+
+        .review__content {
+            font-weight: 400;
+            font-size: 18px;
+            letter-spacing: -0.05em;
+            color: #191a23;
+            margin-top: 0;
+            align-self: start;
+        }
+    }
+}
+
+.review__cover {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    z-index: 1;
+    transform: translateY(50%);
+    width: 100%;
+
+    img {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.review__cover img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+@media (max-width: 768px) {
+    .review__body {
+        height: 450px;
+    }
+    .review__title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        font-size: 28px;
+    }
+
+    .review__content {
+        font-weight: 400;
+        font-size: 18px;
+        letter-spacing: -0.05em;
+        color: #191a23;
+        margin-top: 0;
+        align-self: start;
+
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .review {
+        height: 250px;
+    }
+    .review__body {
+        gap: 12px;
+        padding: 20px;
+        height: 200px;
+    }
+    .review__title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        font-size: var(--mobile-h3);
+
+        img {
+            width: 20%;
+        }
+    }
+
+    .review__content {
+        p {
+            font-size: var(--mobile-p);
+            font-weight: 400;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.reviews__title {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 90px;
+}
+
+.reviews__title h2 {
+    white-space: normal;
+    word-break: break-word;
+    margin: 0;
+    font-family: Nimbus Sans L Bold;
+}
+
+.reviews__title::after {
+    content: "";
+    height: 0.4em;
+    background-color: var(--accent-color);
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .reviews__title {
+        margin-bottom: 20px;
+    }
+    .reviews__title::after {
+        display: none;
+    }
+}

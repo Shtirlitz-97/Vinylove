@@ -1,0 +1,37 @@
+
+.products-arrow {
+    font-weight: 900;
+}
+
+.products-arrow::after {
+    color: black;
+}
+
+.products__title {
+    margin-bottom: 50px;
+}
+
+.products__title::after {
+    content: "";
+    height: 0.4em;
+    background-color: var(--accent-color);
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .products-arrow::after {
+        display: none;
+    }
+    .products h2 {
+        margin-bottom: 50px; }
+}
+
+@media (max-width: 375px) {
+    .products-arrow::after {
+        display: none;
+    }
+    .products h2 {
+        margin-bottom: 12px;
+        font-size: var(--mobile-h2);
+    }
+}
