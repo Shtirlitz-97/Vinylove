@@ -13,6 +13,10 @@
   font-style: normal;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 h1 {font-size: 70px; letter-spacing: -0.05em; font-family: 'Nimbus Sans L Bold';}
 h2 {font-size: 48px; letter-spacing: -0.05em; font-family: 'Nimbus Sans L Bold';}
 h3 {font-size: 30px; letter-spacing: -0.05em;}

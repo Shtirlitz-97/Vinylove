@@ -7,6 +7,12 @@
     color: black;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+  opacity: 1 !important;
+  display: block !important;
+}
+
 .products__title {
     margin-bottom: 50px;
 }

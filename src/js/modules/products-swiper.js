@@ -9,6 +9,7 @@ const swiper1 = new Swiper('.swiper-products', {
   spaceBetween: 100,
   direction: 'horizontal',
   loop: true,
+  grabCursor: true,
 
   // Navigation arrows
   navigation: {

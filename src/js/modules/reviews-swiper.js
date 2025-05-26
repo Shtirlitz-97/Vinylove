@@ -31,6 +31,7 @@ const swiper2 = new Swiper('.reviews-swiper', {
               navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+        grabCursor: true,
       },
     },
     375: {
