@@ -48,7 +48,10 @@ const closeBtn = modal.querySelector('.modal__close');
 document.querySelectorAll('.open-modal').forEach(btn => {
     btn.addEventListener('click', () => {
         // Заполняем модальное окно данными из карточки
-        modalImg.src = btn.dataset.img;
+        let imgPath = btn.dataset.img;
+        const fileName = imgPath.split('/').pop();
+        imgPath = `./img/products/${fileName}`;
+        modalImg.src = imgPath;
         modalImg.alt = btn.dataset.title;
         modalDesc.textContent = btn.dataset.desc;
         modalTitle.textContent = btn.dataset.title;
