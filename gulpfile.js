@@ -19,5 +19,6 @@ gulp.task(
     gulp.series(
         'clean:docs','images:docs',
         gulp.parallel('html:docs','sass:docs','fonts:docs','js:docs'),
+        'clean-paths',  
         gulp.parallel('browser-sync:docs')
 ));
